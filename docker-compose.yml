@@ -5,6 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: /bin/bash srt start webport=0.0.0.0:8091
+    command: /bin/bash srt start webport=0.0.0.0:8090
     ports:
-      - "8091:8091"
+      - "8090:8090"
