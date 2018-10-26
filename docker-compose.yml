@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: python3 ./bin/srtool runserver 0.0.0.0:8090
+    volumes:
+      - .:/srtool
+    ports:
+      - "8090:8090"
